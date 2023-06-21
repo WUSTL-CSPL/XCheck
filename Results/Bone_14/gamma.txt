@@ -1,0 +1,6 @@
+[Computed Gamma_s: 0.7311298631001062]
+[Computed Gamma_d: 0.8719442376610584]
+[Computed Gamma_v: 1.4509698726867208]
+[Computed Gamma_m: 0.6519942390523892]
+[Total Computed Gamma: 2.2594940963508887]
+[Final Decision: Malicious]
