@@ -70,7 +70,7 @@ python3 run.py -f1 Geometry/Bone_12 -f2 Geometry/Bone.stl -o Bone_12 -etdist 1.7
 <!-- bone 14 -->
 Compare CT scans of a 3D printed bone scaffold (manipulated by adding various internal solid regions) to its original model:
 ```
-python3 run.py -f1 Geometry/Bone_14 -f2 Geometry/Bone.stl -o Bone_14 -etdist 1.8 -ets 0.05 -etg 0.005 -etm 1 
+python3 run.py -f1 Geometry/Bone_14 -f2 Geometry/Bone.stl -o Bone_14 -etdist 1.7 -ets 0.05 -etg 0.005 -etm 1 
 ```
 ![Screenshot](images/bone_14.png)
 
