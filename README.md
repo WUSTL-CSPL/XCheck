@@ -46,8 +46,10 @@ Invoke with the following arguments:
 `-basic`: Run basic tests, visualize results without running the entire system. Can be added after a command.
 
 
-## Examples:
-The visualization of a number of benign and manipulated models are provided, along with their commands and results. (Manufacturing imperfection can be spotted in some of the models, results are kept for veracity.) To run an existing analysis in basic test mode, run the following command. please make sure the result subdirectory exist under the ./Results/ directory.
+## Basic Tests
+The basic tests are designed to be simple functionality checks that do not necessitate running the complete system, but instead verify that all required software components are functioning properly. In our repository, the basic tests utilize the intermediate results obtained from the prior experiments, to provide both visualization and final determination (i.e., malicious or benign) of the corresponding model. As such, these basic tests verify the proper functioning of XCheck while not having to go through intermediate processes such as model registration and Housdorff distance calculation.
+
+To run an existing analysis in basic test mode, run the following command. please make sure the result subdirectory exist under the ./Results/ directory.
 ```
 python3 run.py -basic <result_dir>
 ```
@@ -55,6 +57,8 @@ For example, the basic test for Bone_12 is:
 ```
 python3 run.py -basic Bone_12
 ```
+
+## Complete Execution 
 To re-run the analysis in complete test mode, remove the `-basic` commands and enter the full command instead. Note that re-running analysis will overwrite the stored results of the respective model. 
 ```
 python3 run.py -f1 <CT_scan_dir> -f2 <original_model_dir> -o <result_dir> -etdist <error_tolerance_distance> -ets <error_tolerance_scale> -etg <error_tolerance_group> -etm <error_tolerance_material>"
