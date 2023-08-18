@@ -138,3 +138,21 @@ Compare CT scans of a 3D printed bone screw (swapped for a different material) t
 python3 run.py -f1 Geometry/C-Screw -f2 Geometry/Screw.STL -o C_screw -etdist 1.6 -ets 0.05 -etg 0.005 -etm 1
 ```
 ![Screenshot](images/screw_mat.png)
+
+# Citation
+
+If you find the platform useful, please cite our work with the following reference:
+```
+@inproceedings {yu2023xcheck,
+author = {Zhiyuan Yu and Yuanhaur Chang and Shixuan Zhai and Nicholas Deily and Tao Ju and XiaoFeng Wang and Uday Jammalamadaka and Ning Zhang},
+title = {{XCheck}: Verifying Integrity of 3D Printed {Patient-Specific} Devices via Computing Tomography},
+booktitle = {32nd USENIX Security Symposium (USENIX Security 23)},
+year = {2023},
+isbn = {978-1-939133-37-3},
+address = {Anaheim, CA},
+pages = {2815--2832},
+url = {https://www.usenix.org/conference/usenixsecurity23/presentation/yu-zhiyuan-xcheck},
+publisher = {USENIX Association},
+month = aug,
+}
+```
